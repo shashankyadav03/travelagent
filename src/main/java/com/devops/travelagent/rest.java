@@ -17,6 +17,9 @@ public class rest {
 		return "welcome";
 	}
 	
-	   
+	@GetMapping("/agent")
+	public String agent(ModelMap model) {
+		return "agent";
+	}
 	
 }
