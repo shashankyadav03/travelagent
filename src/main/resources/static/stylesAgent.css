@@ -1,0 +1,27 @@
+.mr-n2 {
+  margin-right: -.75em !important;
+}
+.card-img-avatar {
+  height: 80px;
+  width: 80px;
+  margin: -40px auto 0 auto;
+}
+
+body{
+	margin:0;
+	color:#6a6f8c;
+	background:url(https://cdn.pixabay.com/photo/2015/07/05/13/44/beach-832346_960_720.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.list-group-item{
+	margin: 20px;
+	overflow:hidden;
+	background:none !important;
+}
+
