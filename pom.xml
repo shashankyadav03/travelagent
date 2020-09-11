@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<start-class>com.devops.travelagent.TravelagentApplication</start-class>
 	</properties>
 
 	<dependencies>
