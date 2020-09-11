@@ -5,8 +5,13 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <title>Home Page</title>    
 </head>    
-<body>    
-   <h2>List of our agents!!</h2>
+<body>  
+<div class="key">
+<h1 th:text="${search.place}">Key</h1>
+<h2>List of our agents!!</h2>
+</div>  
+
+   
    
 <ul class="list-group list-group-flush mb-3">
   <li class="list-group-item">
@@ -37,62 +42,16 @@
       </div>
     </div>
   </li>
+  <li class="list-group-item">
+    <div class="media">
+      <img class="rounded-circle mr-3" src="https://www.gravatar.com/avatar?d=mp&s=50" />
+      <div class="media-body align-self-center">
+        <strong><a href="#">Vivek</a></strong>
+        <div class="text-muted">Tour Executive</div>
+      </div>
+    </div>
+  </li>
 </ul>
 
-<h2>Cards</h2>
-<div class="row">
-  <div class="col-6 col-md-3 mb-3">
-
-    <div class="card text-center">
-      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
-      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
-      <div class="card-body">
-        <h5 class="card-title">Display Name</h5>
-        <p class="card-text text-muted">Job Title</p>
-        <a href="#" class="btn btn-outline-primary btn-block">Action</a>
-      </div>
-    </div>
-
-  </div>
-  <div class="col-6 col-md-3 mb-3">
-
-    <div class="card text-center">
-      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
-      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
-      <div class="card-body">
-        <h5 class="card-title">Display Name</h5>
-        <p class="card-text text-muted">Job Title</p>
-        <a href="#" class="btn btn-outline-primary btn-block">Action</a>
-      </div>
-    </div>
-
-  </div>
-  <div class="col-6 col-md-3 mb-3">
-
-    <div class="card text-center">
-      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
-      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
-      <div class="card-body">
-        <h5 class="card-title">Display Name</h5>
-        <p class="card-text text-muted">Job Title</p>
-        <a href="#" class="btn btn-outline-primary btn-block">Action</a>
-      </div>
-    </div>
-
-  </div>
-  <div class="col-6 col-md-3 mb-3">
-
-    <div class="card text-center">
-      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
-      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
-      <div class="card-body">
-        <h5 class="card-title">Display Name</h5>
-        <p class="card-text text-muted">Job Title</p>
-        <a href="#" class="btn btn-outline-primary btn-block">Action</a>
-      </div>
-    </div>
-
-  </div>
-</div>
 </body>    
 </html> 

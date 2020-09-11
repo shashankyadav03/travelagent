@@ -7,10 +7,14 @@
 <title>Home Page</title>    
 </head>       
    <body>
+   <div class="wel">
+   <p>Welcome!</p>
+   <p  th:text="${user.username}" >user</p>
+   </div> 
   <form action="#" th:action="@{/agent}" th:object="${search}" method="post" class="search-container">
     <input th:field="*{place}" type="text" id="search-bar" placeholder="Where you want to go next?">
     <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
-    <input type="submit" class="btn" value="Search">
+    <input type="submit" class="b5" value="Search">
   </form>
 </body>   
 </html> 

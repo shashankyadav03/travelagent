@@ -2,7 +2,6 @@ package com.devops.travelagent;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,13 +18,15 @@ public class rest {
     public String personSubmit(@ModelAttribute user user,Model model) {
 		System.out.println(user.username);
 		model.addAttribute("search", new search());
+		model.addAttribute("user", user);
 		return "welcome";
 //    return "results";
     }
 	
 	@PostMapping("agent")//check
-    public String personSubmit(@ModelAttribute search search) {
+    public String personSubmit(@ModelAttribute search search,Model model) {
 		System.out.println(search.place);
+		model.addAttribute("search", search);
 		return "agent";
 //    return "results";
     }
