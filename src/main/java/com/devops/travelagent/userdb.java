@@ -10,6 +10,13 @@ public class userdb {
 		db.put(user, pass);
 	}
 	
+	public String getuserpassword(String user) {
+		if(db.containsKey(user)) {
+				return db.get(user);
+		}
+		return "Invalid";
+	}
+	
 	public boolean checkuser(String user,String pass) {
 		
 		if(db.containsKey(user)) {
