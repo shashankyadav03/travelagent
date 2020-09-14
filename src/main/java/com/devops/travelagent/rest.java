@@ -36,7 +36,6 @@ public class rest {
 			return "index";
 		}
 		return "login-error";
-		
     }
 	
 	@PostMapping("welcome")
