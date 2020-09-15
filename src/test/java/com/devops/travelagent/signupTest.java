@@ -7,7 +7,7 @@ class signupTest {
 
 	userdb u1=new userdb();
 	
-	@SuppressWarnings("restriction")
+	
 	@Test
 	public void userTest() throws Exception {
 		u1.setuser("Vivek","pass");

@@ -22,7 +22,7 @@ class TravelagentApplicationTests {
 		assertThat(rest).isNotNull();
 	}
 	
-	@SuppressWarnings("restriction")
+	
 	@Test
 	public void userTest() throws Exception {
 		u1.setuser("Shashank","pass");

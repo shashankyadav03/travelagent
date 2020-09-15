@@ -7,7 +7,7 @@ class SearchPlaceTest {
 
 	search se=new search();
 	
-	@SuppressWarnings("restriction")
+	
 	@Test
 	public void searchTest() throws Exception {
 		se.setPlace("Delhi");
