@@ -25,6 +25,12 @@ body{
 	background:none !important;
 	
 }
+.text-muted{
+	color:black;
+}
+.titlekey{
+	color: red;
+}
 
 .key{
 text-align:center;
