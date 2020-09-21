@@ -11,10 +11,78 @@
    <p>Welcome!</p>
    <p  th:text="${user.username}" >user</p>
    </div> 
+   
   <form action="#" th:action="@{/agent}" th:object="${search}" method="post" class="search-container">
     <input th:field="*{place}" type="text" id="search-bar" placeholder="Where you want to go next?">
     <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
     <input type="submit" class="b5" value="Search">
   </form>
+  
+  <h2 class="popular">Most Popular places in India</h2>
+<div class="row">
+  <div class="col-6 col-md-3 mb-3">
+
+    <div class="card text-center">
+      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
+      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
+      <div class="card-body">
+        <h5 class="card-title">Manali</h5>
+        <p class="card-text text-muted">Manali is a high-altitude Himalayan resort town in India’s northern Himachal Pradesh state. It has a reputation as a backpacking center and honeymoon destination. Set on the Beas River, it’s a gateway for skiing in the Solang Valley and trekking in Parvati Valley. It's also a jumping-off point for paragliding, rafting and mountaineering in the Pir Panjal mountains, home to 4,000m-high Rohtang Pass.</p>
+        <form action="#" th:action="@{/agent}" th:object="${search}" method="post">
+        	<input type="hidden" id="place" name="place" th:value="Manali"/>
+    		<input type="submit" class="btn btn-outline-primary btn-block" value="Manali">
+  		</form>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-6 col-md-3 mb-3">
+
+    <div class="card text-center">
+      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
+      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
+      <div class="card-body">
+        <h5 class="card-title">Goa</h5>
+        <p class="card-text text-muted">Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.New year is the best time to visit for tourists.</p>
+        <form action="#" th:action="@{/agent}" th:object="${search}" method="post">
+        	<input type="hidden" id="place" name="place" th:value="Goa"/>
+    		<input type="submit" class="btn btn-outline-primary btn-block" value="Goa">
+  		</form>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-6 col-md-3 mb-3">
+
+    <div class="card text-center">
+      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
+      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
+      <div class="card-body">
+        <h5 class="card-title">Kerala</h5>
+        <p class="card-text text-muted">Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. Inland are the Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well as wildlife.National parks like Eravikulam , Periyar, and Wayanad.</p>
+        <form action="#" th:action="@{/agent}" th:object="${search}" method="post">
+        	<input type="hidden" id="place" name="place" th:value="Kerala"/>
+    		<input type="submit" class="btn btn-outline-primary btn-block" value="Kerala">
+  		</form>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-6 col-md-3 mb-3">
+
+    <div class="card text-center">
+      <img class="card-img-top" src="https://static.codepen.io/assets/profile/profile-bg-7e5b92551f68bb55b638847ab4b3ced093fa6d3727e02083fdade22a2d4b07e2.svg" />
+      <img class="card-img-avatar rounded-circle" src="https://www.gravatar.com/avatar?d=mp" />
+      <div class="card-body">
+        <h5 class="card-title">Shillong</h5>
+        <p class="card-text text-muted">Shillong is a hill station in northeast India and capital of the state of Meghalaya. It’s known for the manicured gardens at Lady Hydari Park. Nearby, Ward’s Lake is surrounded by walking trails. North, the Don Bosco Centre for Indigenous Cultures features displays on the region’s native people. Waterfalls include the Elephant Falls to the southwest. East of here, forested Shillong Peak offers city views.</p>
+        <form action="#" th:action="@{/agent}" th:object="${search}" method="post">
+        	<input type="hidden" id="place" name="place" th:value="Shillong"/>
+    		<input type="submit" class="btn btn-outline-primary btn-block" value="Shillong">
+  		</form>
+  </div>
+  </div>
+ </div>
+	
 </body>   
 </html> 

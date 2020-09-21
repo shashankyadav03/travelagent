@@ -56,9 +56,13 @@ public class rest {
     }
 	
 	@PostMapping("agent")//check
-    public String personSubmit(@ModelAttribute search search,Model model) {
+    public String personSubmit(@ModelAttribute user user,@ModelAttribute search search,Model model) {
 		System.out.println(search.place);
-		
+		if(search.place.length()<2) {
+			model.addAttribute("search", new search());
+			model.addAttribute("user", user);
+			return "welcome";
+		}
 	
 		model.addAttribute("search", search);
 		return "agent";

@@ -2,7 +2,7 @@ body{
 	backdrop-filter: blur(0.5px);
 	margin:0;
 	color:#6a6f8c;
-	background:url(https://cdn.pixabay.com/photo/2017/03/18/09/11/map-2153535_960_720.jpg)no-repeat center center fixed; 
+	background:url(https://cdn.pixabay.com/photo/2016/06/25/12/48/go-pro-1478810_960_720.jpg)no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,6 +16,14 @@ body{
   width: 490px;
   display: block;
   margin: 0 auto;
+}
+.popular{
+	color: black;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:15px;
+	font-size: 30px;
+	background: rgba(204, 204, 204, 0.1);
 }
 
 .wel{
@@ -35,26 +43,17 @@ input#search-bar{
   font-size: 1rem;
   border: 1px solid #D0CFCE;
   outline: none;
-  &:focus{
-    border: 1px solid #008ABF;
-    transition: 0.35s ease;
-    color: #008ABF;
-    &::-webkit-input-placeholder{
-      transition: opacity 0.45s ease; 
-  	  opacity: 0;
-     }
-    &::-moz-placeholder {
-      transition: opacity 0.45s ease; 
-  	  opacity: 0;
-     }
-    &:-ms-placeholder {
-     transition: opacity 0.45s ease; 
-  	 opacity: 0;
-     }    
-   }
+  
  }
 
-
+.mr-n2 {
+  margin-right: -.75em !important;
+}
+.card-img-avatar {
+  height: 80px;
+  width: 80px;
+  margin: -40px auto 0 auto;
+}
 
 .b5 {
   margin:45px;
@@ -79,3 +78,6 @@ input#search-bar{
   top: -58px;
   right: -15px;
 }
+
+
+
