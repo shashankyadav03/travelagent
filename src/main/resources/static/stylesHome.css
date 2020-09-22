@@ -2,7 +2,7 @@ body{
 	backdrop-filter: blur(0.5px);
 	margin:0;
 	color:#6a6f8c;
-	background:url(https://cdn.pixabay.com/photo/2016/06/25/12/48/go-pro-1478810_960_720.jpg)no-repeat center center fixed; 
+	background:url(https://cdn.pixabay.com/photo/2018/08/21/23/29/fog-3622519_960_720.jpg)no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,7 +27,7 @@ body{
 }
 
 .wel{
-	color:white;
+	color: black;
 	text-align:center;
 	font-weight:bold;
 	margin-bottom:5px;
@@ -53,10 +53,11 @@ input#search-bar{
   height: 80px;
   width: 80px;
   margin: -40px auto 0 auto;
+  
 }
 
 .b5 {
-  margin:45px;
+  margin:40px;
   padding: 9px 20px;
   position: relative;
   right: -157px;
