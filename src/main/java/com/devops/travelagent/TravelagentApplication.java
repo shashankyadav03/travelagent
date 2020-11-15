@@ -8,6 +8,8 @@ public class TravelagentApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TravelagentApplication.class, args);
+	//	producer.create();
+	//consumer.create();
 	}
 
 }

@@ -1,7 +1,7 @@
 body{
 	margin:0;
 	color:#6a6f8c;
-	background:url(https://cdn.pixabay.com/photo/2017/08/01/00/01/map-2562138_960_720.jpg)no-repeat center center fixed; 
+	background:url("start.jpg")no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

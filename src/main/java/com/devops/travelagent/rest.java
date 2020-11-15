@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class rest {   
 	
 	userdb u1=new userdb();
+	
 	@GetMapping("/")    
 	public String index(Model model)  {  
 		model.addAttribute("user", new user());
@@ -29,22 +30,29 @@ public class rest {
     public String signup(@ModelAttribute usersignup usersignup ,Model model) {
 		model.addAttribute("user", new user());
 		model.addAttribute("usersignup", new usersignup());
-
+		u1.setuser("Kiran", "pass");
+		u1.setuser("Shashank","pass");
+		u1.setuser("Vivek", "pass");
 		
 		if(usersignup.password.equals(usersignup.rpassword)) {
 			u1.setuser(usersignup.username, usersignup.password);
 			return "index";
 		}
+		
 		return "login-error";
     }
 	
 	@PostMapping("welcome")
     public String personSubmit(@ModelAttribute user user,Model model) {
 		System.out.println(user.username);
+		u1.setuser("Kiran", "pass");
+		u1.setuser("Shashank","pass");
+		u1.setuser("Vivek", "pass"); 
 		
 		if(!u1.checkuser(user.username, user.password)) {
 			model.addAttribute("user", new user());
 			model.addAttribute("usersignup", new usersignup());
+			
 			return "login-error";
 		}
 		model.addAttribute("search", new search());

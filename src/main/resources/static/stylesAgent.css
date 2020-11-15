@@ -10,7 +10,7 @@
 body{
 	margin:0;
 	color:#6a6f8c;
-	background:url(https://cdn.pixabay.com/photo/2016/11/22/21/33/sunglasses-1850648_960_720.jpg)no-repeat center center fixed; 
+	background:url("agent.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
