@@ -1,4 +1,2 @@
-TravelAgent Application
-A capstone project with DevOps capabilities.
-Application will be Travel agent booking site developed in java using Spring boot.
+Travel Agent Application : Developed a Java based web-application using Spring boot, Hibernate and Thymeleaf. Kafka is used as a messaging service.(Spring, Kafka)
 
